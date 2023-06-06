@@ -1,35 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<shelfDocument>
-  <!-- This file contains definitions of shelves, toolbars, and tools.
- It should not be hand-edited when it is being used by the application.
- Note, that two definitions of the same element are not allowed in
- a single file. -->
-
-  <toolshelf name="andcgi" label="AnD CGI">
-    <memberTool name="objectmerge"/>
-    <memberTool name="merge"/>
-    <memberTool name="cameraClip"/>
-    <memberTool name="sceneSave"/>
-  </toolshelf>
-
-  <tool name="objectmerge" label="OBJ IN" icon="$AnDCGI/icons/web-browser.png">
-    <script scriptType="python"><![CDATA[import pipeIn
-pipeIn.callPipeIn()]]></script>
-  </tool>
-
-  <tool name="merge" label="Merge" icon="$AnDCGI/icons/combine.png">
-    <script scriptType="python"><![CDATA[import amalgamate
-amalgamate.callMerge()
-]]></script>
-  </tool>
-
-  <tool name="cameraClip" label="Camera Clip" icon="$AnDCGI/icons/cctv.png">
-    <script scriptType="python"><![CDATA[import camClip
-camClip.cameraClip()]]></script>
-  </tool>
-
-  <tool name="sceneSave" label="CH Save" icon="$AnDCGI/icons/icons8-save-close-96.png">
-    <script scriptType="python"><![CDATA[# Imports Libraries
+# Imports Libraries
 import hou
 import os
 from functools import partial
@@ -124,6 +93,4 @@ else:
     hou.hipFile.save(file_name=mergeSDFN)
     hou.ui.displayMessage(
         "Version 001 File Has Been Saved! \nAll Varibales Have Been Updated "
-        "With Current \nFrame Range Has Been Set \nOof! So Much Work")]]></script>
-  </tool>
-</shelfDocument>
+        "With Current \nFrame Range Has Been Set \nOof! So Much Work")
