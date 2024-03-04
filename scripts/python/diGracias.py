@@ -5,7 +5,7 @@ from PySide2 import QtCore, QtUiTools, QtWidgets, QtGui
 
 # Calling UI File & Some Modification / Create The Widget Class
 
-aPath = hou.getenv("AnDCGI")
+aPath = hou.getenv("AnDLib")
 uPath = "scripts/UI"
 iPath = "/icons"
 UIPath = os.path.join(aPath, uPath)

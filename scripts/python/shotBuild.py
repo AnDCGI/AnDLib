@@ -10,7 +10,7 @@ from PySide2 import QtCore, QtUiTools, QtWidgets, QtGui
 
 # Setting The Global Path
 creationDate = date.today()
-aPath = hou.getenv("AnDCGI")
+aPath = hou.getenv("AnDLib")
 rPath = "scripts/UI"
 iPath = "/icons"
 UIPath = os.path.join(aPath, rPath)
