@@ -1,0 +1,70 @@
+#type: node
+#context: sop
+#icon: opdef:.?icons8-convert.svg
+#tags: attrs
+#since: 19.5
+
+= Real Speed =
+"""HDA for Calculating, Converting, and Adjusting *Speed in Convenient Units*"""
+
+== License == (license)
+:box:
+    #display: raised orange
+    
+    [GPL-3.0 Copyright|https://raw.githubusercontent.com/AnDCGI/AnDLib/main/LICENSE] (c) 2024 Dhrubajyoti S.
+
+== Overview ==
+:box:
+    #display: raised green
+
+    * *Inputs*
+
+        # Connect Geometry for Processing   <sup>Required</sup>
+:box:    
+    #display: raised teal
+    
+    * *Detail Attribute*
+        
+        # It Will Create Detail Attribute Named *`Real Speed`*
+
+== HDA Controls ==    
+    @parameters
+    ~~~ Convert ~~~
+    Automatically calculates `v` if it doesn't exist; otherwise, uses the existing `v` to calculate `speed` in different units.
+    ::Where:
+        #id: class
+        Element type for the destination attribute (specified by __Attribute Name__).
+    ::What:
+        #id: attrib
+        The name of the attribute to create or modify[Fold:1]. If the attribute does not exist with the given name, it will be added to the selected __Attribute Class__. This node can be used only on `float` type attributes.
+        :box:
+            #fold: 1
+                
+            Only implemented to work with speed.
+    ~~~ Unit Settings ~~~
+    ::To:
+        #id: spduni
+        Allows you to specify units for the `Speed` to convert to and the node will internally perform the conversions. There are presets for commonly used units of speed.
+    ::In:
+        #id: timuni
+        Allows you to specify the `Time`, unless the above unit is dimensionless.
+    :note:
+        Mach Number is calculated with Speed of Sound at 20 °C in Dry Air.
+    ::Multiplier:
+        #id: mult
+        Allows to adjust the speed which internally changes the velocity.
+    ::Floating Points:
+        #id: flpnts
+        Increase or Decrease the floating points, useful at Mach Speed, God Speed.
+
+== Connect ==
+* [LinkedIn|https://www.linkedin.com/in/djdhrub/]
+    #glyph: fa-linkedin
+* [Email|mailto:dhruba@andlabs.io]
+    #glyph: fa-paper-plane
+
+
+== Disclaimer ==
+I have created this HDA to the best of my knowledge and have tested it on various scenarios. However, this doesn't guarantee that it will always work, although it most certainly should!
+
+Icons by [Icons8|https://icons8.com/]  
