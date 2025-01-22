@@ -9,6 +9,7 @@
     <memberTool name="objectmerge"/>
     <memberTool name="merge"/>
     <memberTool name="cameraClip"/>
+    <memberTool name="Shader_Converter_echopr"/>
   </toolshelf>
 
   <tool name="objectmerge" label="OBJ IN" icon="$AnDLib/icons/web-browser.png">
@@ -26,5 +27,4 @@ amalgamate.callMerge()
     <script scriptType="python"><![CDATA[import camClip
 camClip.cameraClip()]]></script>
   </tool>
-
 </shelfDocument>

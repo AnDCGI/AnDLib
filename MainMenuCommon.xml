@@ -6,18 +6,26 @@
 
 <mainMenu>
   <menuBar>
-    <subMenu id="my_submenu">
+    <subMenu id="andcgi_submenu">
       <label>AnD CGI</label>
 
-      <scriptItem id="h.first_item">
+      <scriptItem id="h.abc_shot_builder">
         <label>Shot Builder</label>
-        <scriptPath>$AnDCGI/scripts/python/shotBuild.py</scriptPath>
+        <scriptPath>C:/Users/DJ_Dh/Documents/GitHub/AnDLib/scripts/python/shotBuild.py</scriptPath>
       </scriptItem>
 
-      <scriptItem id="h.second_item">
-        <label>Di Gracias</label>
-        <scriptPath>$AnDCGI/scripts/python/diGracias.py</scriptPath>
+      <scriptItem id="h.connect_with_me">
+        <label>Gracias!</label>
+        <scriptPath>C:/Users/DJ_Dh/Documents/GitHub/AnDLib/scripts/python/diGracias.py</scriptPath>
       </scriptItem>
     </subMenu>
-  </menuBar>
+    
+    <subMenu id="file_menu">
+        <scriptItem id="h.incremental_save">
+            <label>Increment and Save</label>
+            <scriptPath>C:/Users/DJ_Dh/Documents/GitHub/AnDLib/scripts/python/incrementalSave.py</scriptPath>
+            <insertBefore>saveastype_strip</insertBefore>
+        </scriptItem>
+    </subMenu>
+    </menuBar>
 </mainMenu>
